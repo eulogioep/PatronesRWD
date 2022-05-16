@@ -48,3 +48,18 @@ p {
 }
 
 /** CODIGO AQUI **/
+@media (min-width: 768px) {
+    .contenedor-flex{
+        display: flex;
+        justify-content: space-between;/* Da separación entre las columnas*/
+    }
+    .contenido-principal{
+        flex-basis: calc(60% - 1rem);/* Tamaño de la columna*/
+    }
+    .sidebar{
+        flex-basis: calc(20% - 1rem);/* Tamaño de la columna*/
+    }
+    .sidebar-1{
+        order: -1;/* Poner como el elemento primero */
+    }
+}
