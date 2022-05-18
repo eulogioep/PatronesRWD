@@ -49,3 +49,16 @@ p {
 
 
 /** CODIGO AQUI **/
+@media (min-width: 768px) {
+    .con-sidebar{
+        display: flex;
+        /*justify-content: space-between; Con gap no hace falta esta línea */
+        gap: 2rem;
+    }
+    aside{
+        flex: 1;
+    }
+    article{
+        flex: 3;/* Por cada pixel que recibe aside, article recibe 3 */
+    }
+}
